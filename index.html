@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductHub - Katalog Produk</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <h1>ProductHub</h1>
+        <nav>
+            <a href="index.html" class="active">Produk</a>
+            <a href="form.html">Buat Caption</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-heading">
+            <p class="subtitle">KATALOG PRODUK</p>
+            <h2>Temukan Produk Favoritmu</h2>
+            <p>Data produk diambil langsung dari DummyJSON API.</p>
+        </section>
+
+        <div class="toolbar">
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Cari nama produk..."
+                aria-label="Cari produk"
+            >
+            <button id="reloadButton" type="button">Muat Ulang</button>
+        </div>
+
+        <p id="statusMessage" role="status">Menyiapkan data produk...</p>
+        <section id="productList" class="product-grid"></section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ProductHub | Tugas PPAW Week 6</p>
+    </footer>
+</body>
+</html>
